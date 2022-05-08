@@ -1,0 +1,120 @@
+
+.container-top{
+    background: #fafafa;
+    margin-bottom: 20px;
+}
+iframe{
+    margin-top: 20px ;
+    margin-left: 50px;
+}
+.catelory{
+    padding: 20px 50px;
+    font-size: 12px;
+    display: flex;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.catelory>li{
+    margin-right: 10px;
+}
+.catelory>li a{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(126, 124, 124);
+}
+.container-bot{
+    display: flex;
+}
+.menu-left{
+    width: 25%;
+}
+.menu-left__container{
+    border: 1px solid #cccc;
+    margin-left:  50px;
+}
+.menu-left__title>h3{
+    font-family: Lucida Sans Unicode;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    margin: 20px 20px;
+}
+.menu-left__content{
+    padding-left: 20px;
+}
+.menu-left__content>li{
+    padding: 10px 0;
+    border-bottom: 1px dashed #cccc;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.menu-left__content>li:last-child{
+    border: none;
+}
+.content-main{
+    margin-left: 30px;
+    width: 70%;
+}
+.content-main__title{
+    margin-top: -15px;
+    font-size: 14px;
+    
+}
+.content-main h2{
+    margin-top: 55px;
+    font-size: 19px;
+    margin-left: 28px;
+}
+.content-main__title>h1{
+    font-weight: 600;
+    font-family:  inherit;
+}
+ul.content-main__content>li{
+    list-style: outside;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 24px 0;
+}
+ul.content-main__content>li>a{
+    color: rgb(158, 156, 156);
+    font-size: 14px;
+}
+ul.content-main__content>li:nth-child(4){
+    font-size: 20px;
+}
+ul.content-main__content>li:nth-child(5){
+    font-size: 13px;
+}
+ul.content-main__content>li:nth-child(7){
+    list-style: none;
+}
+@media screen and (max-width:800px) {
+    .menu-left{
+        display: none;
+    }
+    .catelory{
+        padding: 20px 23px;
+    }
+    .content-main__title{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+       
+    }
+    .content-main__title:after {
+        content: "";
+        background: #252a2b;
+        display: block;
+        width: 60px;
+        height: 4px;
+        margin: 25px auto 0;
+    }
+    .content-main{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .catelory{
+        
+        font-size: 9px;
+    }
+}

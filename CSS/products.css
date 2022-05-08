@@ -1,0 +1,320 @@
+
+.container-top{
+    border-top: 1px solid rgb(231, 229, 229) ;
+}
+.product-detail{
+    margin: 0 50px;
+    display: flex;
+}
+.product-slide{
+    margin-right: 30px;
+    width: 60%;
+}
+.product-gallery{
+    display: flex;
+}
+
+.product-gallery__thumbs{
+    margin-right: 15px;
+    width: 90%;
+}
+.product-gallery__thumbs img:hover{
+    border: 1px solid #fff;
+    box-shadow: -1px -1px ;
+}
+.product-gallery__container img{
+    margin-bottom: 5px;
+    width: 60px;
+}
+.product-gallery__images>img{
+    width: 550px;
+}
+.product-description{
+    margin-top: 10px;
+}
+.product-description__title>h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-size: 15px;
+}
+ul.product-description_content>li{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.product-content{
+    width: 47%;
+}
+.product-content__title{
+    border-bottom: 1px dashed rgb(231, 228, 228);
+    width: 100%;
+}
+.product-content__title>h1{
+    font-size: 19px;
+    font-weight: 800;
+    font-family: Lucida Sans Unicode;
+    margin-bottom: 10px;
+}
+.product-content__title>span{
+    display: block;
+    font-size: 12px;
+    color: rgba(150, 149, 149, 0.8);
+    margin-bottom: 10px;
+}
+.product-content__price{
+    border-bottom: 1px dashed rgb(231, 228, 228);
+    width: 100%;
+}
+.product-content__price-container{
+    margin: 10px 0;
+}
+.product-content__price button{
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 25px;
+    background: #f2f5fa;
+    margin-right: 5px;
+}
+.product-content__price button>span{
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+.product-content__price span.pro-price{
+    font-size: 18px;
+    opacity: .92;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.product-content__price del{
+    text-decoration: line-through;
+    color: grey;
+}
+.product-content__size{
+    border-bottom: 1px dashed rgb(231, 228, 228);
+    margin: 10px 0;
+}
+.product-content__size>button{
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+    margin-right:10px;
+    border-radius: 0;
+    border: 1px solid #cccc;
+    background-color: #fff;
+}
+.product-content__size span{
+    font-size: 13px;
+    color: rgba(15, 15, 15, 0.8);
+}
+.product-content__size>button:focus{
+    background-color: black;
+
+}
+.product-content__size>button:focus span{
+    color: #fff;
+}
+form.add-item{
+    width: 100%;
+    margin: 15px 0;
+}
+.add-item__quantity{
+    margin-bottom: 15px;
+}
+.add-item__quantity>input.qty-btn{
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+}
+.add-item__quantity>input.quantity-selector{
+    outline: none;
+    height: 30px;
+    width: 60px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+.row-flex{
+    margin-bottom: 15px;
+    display: flex;
+}
+.row-flex button{
+    width: 250px;
+    height: 50px;
+    border-radius: 0;
+    font-size: 12px;
+    background-color: black;
+    border:1px solid #fff;
+    box-shadow: -1px -1px ;
+    position: relative;
+}
+.row-flex button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom:1px solid black ;
+    border-right: 1px solid black;
+    box-shadow: -1px -1px #fff;
+    background-color: #fff;
+    width: 0%;
+    height: 100%;
+    transition: width 0.4s ease-in-out;
+}
+.row-flex button:hover::before{
+    width: 100%;
+}
+.row-flex button span{
+    position: absolute;
+    top: 17px;
+    left: 90px;
+    z-index: 1000;
+    font-weight: bold;
+    color: #fff;
+    transition: ease-in-out 0.2s;
+}
+.row-flex button:hover span{
+    color: black;
+}
+.row-flex button.pack{
+    margin-right: 15px;
+}
+.row-flex button.buy{
+    background-color: red;
+    border:1px solid #fff;
+    box-shadow: -1px -1px red;
+}
+.row-flex button.buy::before{
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+}
+.add-item__btn button.support{
+    width: 515px;
+    height: 50px;
+    background-color: #29dbd2;
+    border:1px solid #fff;
+    box-shadow: 1px 1px #29dbd2;
+}
+.add-item__btn button.support::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom:1px solid #29dbd2;
+    border-right: 1px solid #29dbd2;
+    box-shadow: -1px -1px #29dbd2;
+    background-color: #fff;
+    width: 0%;
+    height: 100%;
+    transition: width 0.4s ease-in;
+}
+.add-item__btn .support-btn{
+    position: relative;
+}
+.add-item__btn button.support:hover::before{
+    width: 100%;
+}
+.add-item__btn button.support span{
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    z-index: 1000;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
+}
+.add-item__btn button.support:hover span{
+    color: black;
+}
+.fb-like, .fb-comments{
+    margin-left: -50px;
+}
+element.style {
+    vertical-align: bottom;
+    width: 300px;
+    height: 28px;
+}
+element.style {
+    border: none;
+    visibility: visible;
+    width: 356px;
+    height: 28px;
+}
+@media screen and (max-width: 800px){
+
+    ul.products{
+        margin: 0 10px;
+    }
+    ul.products li{
+        flex-basis: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .add-item__btn button.support:hover::before{
+        width: 105%;
+    }
+    .product-detail{
+        margin-left: 20px;
+        margin-right: -20px;
+        flex-direction: column;
+    }
+    .product-description{
+        display: none;
+    }
+    .product-slide{
+        width: 100%;
+    }
+    .product-gallery__container{
+        display: none;
+    }
+    .product-content{
+        width: 95%;
+    }
+    .product-gallery__images{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .product-content__title{
+        display: block;
+    }
+    .product-content__title>h1{
+        width: 100%;
+    }
+    .row-flex button{
+        width: 170px;
+    }
+    .row-flex button span{
+        left: 50px;
+    }
+    .add-item__btn button.support{
+        width: 355px;
+    }
+    .add-item__btn button.support span{
+        left: 0;
+    }
+    .product-gallery__images>img{
+        width: 360px;
+        margin-left: -5px;
+    }
+    .product-content__title{
+        width: 70%;
+    }
+    .product-content__price{
+        width: 70%;
+    }
+    .product-content__size{
+        width: 70%;
+    }
+    .product-slide{
+        margin: 0;
+    }
+}

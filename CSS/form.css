@@ -1,0 +1,106 @@
+*{
+    text-decoration: none;
+    color: #333333;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin: 0 0;
+}
+.container{
+    padding: 30px 7% 0;
+    width: 90%;
+}
+.container-top{
+    height: 60px;
+}
+.logo{
+    margin: 18px 0;
+}
+.logo h2{
+    margin: 0 0;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+ul.category{
+    margin-top: 5px;
+    display: flex;
+    font-size: 12px;
+    padding-left: 0;
+}
+ul.category>li.p1::after{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    vertical-align: middle;
+    margin: 0 0.5em;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjExIiBvcGFjaXR5PSIuNCIgZmlsbD0iIzAwMCI+PHBhdGggZD0iTS41MjYgMS40MDhsNCA0LjY0NS4wMTQtLjgzLTQgNC4zNTQuOTIuODQ2IDQtNC4zNTYuMzc2LS40MS0uMzYyLS40Mi00LTQuNjQ1LS45NDguODE2eiIvPjwvc3ZnPg==),none;
+}
+ul.category a{
+    color: #338dbc;
+}
+ul.category a:hover{
+    color: #66add3;
+}
+.header>h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+.input-button-container input{
+    font-size: 14px;
+    padding: 0 10px;
+    width: 50%;
+    height: 43px;
+    border: 1px solid #cccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+input:focus{
+    border: 2px solid #5097bd;
+}
+.address-bot>select{
+    margin-right: 5px;
+    width: calc(50%/3);
+    height: 43px;
+    border: 1px solid #cccc;
+    border-radius: 5px;
+    outline: none;
+}
+select:focus{
+    border: 2px solid #5097bd;
+}
+.footer{
+    margin-top: 30px;
+}
+.footer>a{
+    font-size: 14px;
+    color: #338dbc;
+}
+.footer>a:hover{
+    color: #66add3;
+}
+.footer button{
+    margin-left: 22.2%;
+    background-color: #5097bd;
+    padding: 15px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.footer button span{
+    margin: 0 10px;
+    color: #ffff;
+}
+@media screen and (max-width: 800px) {
+    .input-button-container input{
+        width: 90%;
+    }
+    .footer button{
+        margin-left: 10px;
+    }
+}
